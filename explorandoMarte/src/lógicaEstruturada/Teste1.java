@@ -14,7 +14,11 @@ public class Teste1 {
 		
 		System.out.print("Escreva o tamanho de colunas: ");
 		int coluna = leia.nextInt();
-
+		String [] [] planalto = new String [linha][coluna];
+	
+		
+		
+		
 		// 2ª Entrada: Coordenadas e orientação
 		System.out.println("Escreva a coordenada x da sonda: ");
 		int x = leia.nextInt();
@@ -26,23 +30,19 @@ public class Teste1 {
 		
 		char orient = leia.next().charAt(0);
 		
+		planalto [x][y] = "o";
+		
+	
+		
 		// 3ª Entrada
 		
 		System.out.print("Dê os comandos: ");
 		char comando = leia.next().charAt(0);
 		
-		
-		int [] [] planalto = new int [linha][coluna];
-		
-		
-		for (int i = 0; i<linha; i++ ) {
-			
-			for (int j = 0; j<coluna; j++) {
-				
-			}
-			
-		}
+
 
 	}
-
+	
 }
+
+
