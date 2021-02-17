@@ -17,8 +17,6 @@ public class Teste1 {
 		String [] [] planalto = new String [linha][coluna];
 	
 		
-		
-		
 		// 2ª Entrada: Coordenadas e orientação
 		System.out.println("Escreva a coordenada x da sonda: ");
 		int x = leia.nextInt();
@@ -32,6 +30,7 @@ public class Teste1 {
 		
 		planalto [x][y] = "o";
 		
+		String comandos[] = {"N", "W", "S", "E"};
 	
 		
 		// 3ª Entrada
@@ -39,9 +38,9 @@ public class Teste1 {
 		System.out.print("Dê os comandos: ");
 		char comando = leia.next().charAt(0);
 		
-
-
 	}
+	
+	
 	
 }
 
