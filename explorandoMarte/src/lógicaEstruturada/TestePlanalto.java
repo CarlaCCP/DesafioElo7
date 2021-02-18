@@ -28,17 +28,57 @@ public class TestePlanalto {
 				
 			}
 			
+			//System.out.print(" escreva: " );
+			//String aux = leia.next().toUpperCase();
+			//String [] listaComando = new String [5];
 			
-			
-			
-			
-			//String comandos[] = {"N", "W", "S", "E"};
-			//for (int d: comandos) {
-				//System.out.println(comandos[d]);
+			//for( int i= 0; i< listaComando.length; i++) {
+				//listaComando[i] = aux;
+				//System.out.print(listaComando[i]);
 			//}
-
-
-
+			
+			
+			//TESTE 
+//			String parada = "M";
+//			String aux;
+//			String [] listaComando = new String [10];
+//			
+//			do {
+//				
+//					for( int i= 0; i< listaComando.length; i++) {
+//						System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M]- Mova \n[X] - Pare");
+//						aux = leia.next().toUpperCase();
+//						parada = aux;
+//						listaComando[i] = aux;
+//						
+//					}
+//					
+//					for(int i = 0; i< listaComando.length; i++) {
+//						System.out.print(listaComando[i]);
+//					}
+//					
+//					
+//			} while (parada == "M" || parada == "R" || parada == "L");
+			
+			
+			String parada = "M";
+			String aux;
+			String [] listaComando = new String [10];
+			
+			while (parada != "X") {
+				
+				for( int i= 0; i< listaComando.length; i++) {
+				System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M]- Mova \n[X] - Pare");					aux = leia.next().toUpperCase();
+				parada = aux;
+				listaComando[i] = aux;
+				
+			}
+				for(int i = 0; i< listaComando.length; i++) {
+					System.out.print(listaComando[i]);
+				}
+				
+		}
+			
 	}
 
 }

@@ -31,6 +31,9 @@ public class Marte {
 		String cardinal = leia.next().toUpperCase();
 		
 		sonda.mostraSonda(x, y, cardinal, matriz1);
+		
+		
+		sonda.comandos();
 	}
 
 }
