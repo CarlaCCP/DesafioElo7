@@ -11,6 +11,7 @@ public class Marte {
 		Sonda sonda = new Sonda();
 		Malha malha = new Malha();
 		
+		System.out.println("CHEGAMOS EM MARTE \nAgora precisamos configurar o tamanho da área que iremos analisar");
 		System.out.print("Digite a quantidade de linhas: ");
 		int linha = leia.nextInt();
 		
@@ -21,16 +22,21 @@ public class Marte {
 		
 		malha.mostraMalha(matriz1);
 		
-		System.out.print("\n\nDigite a coordenada x da sonda: ");
-		int x = leia.nextInt();
+		int contador = 0;
+		while (contador <2) {
+			System.out.print("\n\nDigite a coordenada x da sonda: ");
+			int x = leia.nextInt();
+			
+			System.out.print("Digite a coordenada y da sonda: ");
+			int y = leia.nextInt();
+			
+			System.out.print("Digite a direção cardinal da sonda, exemplo: \n[N] - Norte \n[W] - Oeste \n[S] - Sul \n[E] - Leste: ");
+			String cardinal = leia.next().toUpperCase();
+			
+			sonda.mostraSonda(x, y, cardinal, matriz1);
+			contador++;
+		}
 		
-		System.out.print("Digite a coordenada y da sonda: ");
-		int y = leia.nextInt();
-		
-		System.out.print("Digite a direção cardinal da sonda, exemplo: \n[N] - Norte \n[W] - Oeste \n[S] - Sul \n[E] - Leste: ");
-		String cardinal = leia.next().toUpperCase();
-		
-		sonda.mostraSonda(x, y, cardinal, matriz1);
 		
 		
 		sonda.comandos();

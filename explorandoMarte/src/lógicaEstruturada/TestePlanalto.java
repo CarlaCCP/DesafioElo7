@@ -1,5 +1,6 @@
 package lógicaEstruturada;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TestePlanalto {
@@ -60,24 +61,44 @@ public class TestePlanalto {
 //					
 //			} while (parada == "M" || parada == "R" || parada == "L");
 			
+//			
+//			String parada = "x";
+//			String aux = "x";
+//			String [] listaComando = new String [5];
+//			
+//			
+//				
+//				for(int i= 0; i< listaComando.length && aux != "X" ; i++) {
+//					System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M] - Mova \n[X] - Pare");					
+//					aux = leia.next().toUpperCase();
+//					listaComando[i] = aux;
+//					parada = listaComando[i];
+//					aux = parada;
+//				}
+//				
+//				for(int i = 0; i< listaComando.length; i++) {
+//					System.out.print(listaComando[i]);
+//				}	
 			
-			String parada = "M";
-			String aux;
-			String [] listaComando = new String [10];
 			
-			while (parada != "X") {
-				
-				for( int i= 0; i< listaComando.length; i++) {
-				System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M]- Mova \n[X] - Pare");					aux = leia.next().toUpperCase();
-				parada = aux;
-				listaComando[i] = aux;
-				
+		ArrayList<String> listaComando = new ArrayList<>();
+		
+		String aux;
+		int continua = 0;
+		while(continua == 0) {
+			System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M] - Mova \n[X] - Pare");					
+			aux = leia.next().toUpperCase();
+			listaComando.add(aux);
+			if (aux == "XX") {
+				continua++;
 			}
-				for(int i = 0; i< listaComando.length; i++) {
-					System.out.print(listaComando[i]);
-				}
-				
+		
 		}
+		System.out.print(listaComando);
+		
+		
+			
+			
 			
 	}
 

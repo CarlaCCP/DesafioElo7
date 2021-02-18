@@ -41,6 +41,8 @@ public class Sonda extends Malha {
 		this.cardinal = cardinal;
 	}
 	
+
+	
 	// Mostra Coordenada e a sonda
 	public void mostraSonda(int x, int y, String cardinal, String[][] matriz) {
 		String texto = " *\t";
@@ -56,29 +58,30 @@ public class Sonda extends Malha {
 			}
 		}
 	}
+	
 	// Lista de comandos
 	/*L - 90º esquerda
 	 *R - 90º direita
 	 *M - Move um ponto
 	 * */ 
 	public void comandos () {
-		String aux = "m";
-		String [] listaComando = new String [5];
-		do {
-			System.out.println("Digite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M]- Mova \n[X] - Pare");
-			aux = leia.next().toUpperCase();
-			
+		String aux;
+		String [] listaComando = new String [20];
+		
+				
 				for( int i= 0; i< listaComando.length; i++) {
+					System.out.printf("\nDigite os comandos: \n[L] - 90º Esquerda \n[R] - 90º Direita \n[M] - Mova \n[X] - Pare \n");					
+					aux = leia.next().toUpperCase();
 					listaComando[i] = aux;
-					System.out.print(listaComando[i]);
+					
+					
 				}
-		} while (aux != "X");
-		
-		
-	}
-	
-	
-	
+				
+				for (int i=0; i< listaComando.length; i++) {
+					System.out.printf("Sequência de comandos: \n" ,listaComando[i]);
+				}
+			
+			}
 	
 	// Mostra Coordenada Final
 	
