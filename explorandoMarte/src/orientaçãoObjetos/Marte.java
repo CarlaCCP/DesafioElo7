@@ -22,24 +22,19 @@ public class Marte {
 		
 		malha.mostraMalha(matriz1);
 		
-		int contador = 0;
-		while (contador <2) {
-			System.out.print("\n\nDigite a coordenada x da sonda: ");
-			int x = leia.nextInt();
+		System.out.print("\n\nDigite a coordenada x da sonda: ");
+		int x = leia.nextInt();
 			
-			System.out.print("Digite a coordenada y da sonda: ");
-			int y = leia.nextInt();
+		System.out.print("Digite a coordenada y da sonda: ");
+		int y = leia.nextInt();
 			
-			System.out.print("Digite a direção cardinal da sonda, exemplo: \n[N] - Norte \n[W] - Oeste \n[S] - Sul \n[E] - Leste: ");
-			String cardinal = leia.next().toUpperCase();
+		System.out.print("Digite a direção cardinal da sonda, exemplo: \n[N] - Norte \n[W] - Oeste \n[S] - Sul \n[E] - Leste: ");
+		String cardinal = leia.next().toUpperCase();
 			
-			sonda.mostraSonda(x, y, cardinal, matriz1);
-			contador++;
-		}
+		sonda.mostraSonda(x, y, cardinal, matriz1);
 		
-		
-		
-		sonda.comandos();
+		System.out.println("\n\nEM CONSTRUÇÃO ");
+		// sonda.comandos();
 	}
 
 }

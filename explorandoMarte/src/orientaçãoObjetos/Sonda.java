@@ -63,7 +63,7 @@ public class Sonda extends Malha {
 	/*L - 90º esquerda
 	 *R - 90º direita
 	 *M - Move um ponto
-	 * */ 
+	 *  EM CONSTRUÇÃO*/ 
 	public void comandos () {
 		String aux;
 		String [] listaComando = new String [20];
