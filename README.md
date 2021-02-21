@@ -6,25 +6,11 @@ Olá pessoal, tudo bem? Nesta documentação vou contar um pouco sobre o process
 
 Antes de colocar a mão no código eu prefiro esquematizar em um papel minhas principais dúvidas, certezas e alguns caminhos possíveis para resolução de um desafio. 
 
-![pagina60001](C:\Users\crist\Desktop\Quadrinhos-Joao\pagina60001.jpg)
-
 Dessa forma fica um pouco mais claro os passos que deverei tomar e prováveis problemas que surgirão.
 
 - ### Testando a lógica 
 
-Neste desafio foi pedido que o código estivesse Orientado à objetos. A principio testei algumas funções no paradigma procedural, para agilizar o processo lógico. Criei então duas classes main, testando em uma o planalto e a malha e na outra a lógica de funções auxiliares. 
-
-- Teste planalto: 
-
-![2021-02-21](C:\Users\crist\OneDrive\Imagens\Capturas de tela\2021-02-21.png)
-
-
-
-- Teste funções auxiliares
-
-  ![2021-02-21 (1)](C:\Users\crist\OneDrive\Imagens\Capturas de tela\2021-02-21 (1).png)
-
-
+Neste desafio foi pedido que o código estivesse Orientado à objetos. A principio testei algumas funções no paradigma procedural, para agilizar o processo lógico. Criei então duas classes main, testando em uma o planalto e a malha e na outra a lógica de funções auxiliares.
 
 * ### Construindo as classes em POO
 
